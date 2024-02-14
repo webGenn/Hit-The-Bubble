@@ -1,7 +1,7 @@
 // ----------------------------Game Sound--------------------------------
 
 var audioplay = document.getElementById("audioplay");
-var audio1 = new Audio("Game Bg Tone.mp3");
+var audio1 = new Audio("Game Start Tone.mp3");
 
 audioplay.addEventListener("click",function(){
      if(audioplay.classList.contains("fa-volume-xmark")){
