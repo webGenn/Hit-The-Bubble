@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game - Shivansh Tripathi</title>
+    <!-- ---Adding Css--- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- -----Font-Awesome---- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- -----Google Fonts---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="starbg">
+    <div class="icon">
+        <h1>Hit The Bubble</h1>
+        <i class="fa-solid fa-volume-xmark" id="audioplay"></i>
+    </div>
+
+    <div class="item_box">
+        <a href="Game.html"><button type="button">Start Game</button></a>
+        <a href="#"><button type="button">How To Play</button></a>
+    </div>
+</div>
+
+
+    <script>
+        var audioplay = document.getElementById("audioplay");
+        var audio1 = new Audio("Game Start Tone.mp3");
+
+        audioplay.addEventListener("click",function(){
+             if(audioplay.classList.contains("fa-volume-xmark")){
+                 audioplay.classList.remove("fa-volume-xmark");
+                 audioplay.classList.add("fa-volume-high");
+                 audio1.play();
+             }
+             else{
+                audio1.pause();
+                audioplay.classList.remove("fa-volume-high");
+                audioplay.classList.add("fa-volume-xmark");
+             }
+        })
+    </script>
+
+</body>
+</html>

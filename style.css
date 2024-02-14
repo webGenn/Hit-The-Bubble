@@ -1,0 +1,177 @@
+/*---------------------Removing Default Styles-------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*-------------------------------Game Start Background--------------------------*/
+
+.starbg{
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/Game\ Start\ Bg.jpg);
+}
+.starbg .icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.starbg .icon h1{
+    height: 40px;
+    line-height: 40px;
+    display: inline;
+    width: 300px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.starbg .icon .fa-volume-high,
+.starbg .icon .fa-volume-xmark{
+    background-color: rgb(244, 81, 63);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.item_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.item_box a{
+    display: block;
+    margin-bottom: 30px;
+}
+.item_box a button{
+    padding: 20px 120px;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid white;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+
+/* ----------------------------Game Start Here--------------------------------- */
+
+.Gamebg{
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/Game\ Background.jpg)
+}
+.Gamebg .icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.Gamebg .icon h1{
+    height: 40px;
+    line-height: 40px;
+    display: inline;
+    width: 300px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.Gamebg .icon .fa-volume-high,
+.Gamebg .icon .fa-volume-xmark{
+    background-color: rgb(244, 81, 63);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.box{
+    margin-top: 30px;
+    height: 80vh;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box .top{
+    width: 100%;
+    height: 50px;
+    background-color: #2E8B57;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Roboto Slab';
+}
+.box .top .board{
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.box .top .board .dPanel{
+    margin-left: 10px;
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.box .mid_main_page{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Gamerover{
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+}
+.box .mid_main_page .bubble{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    margin: 10px;
+    margin-right: 0;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    cursor: pointer;
+}
+.box .mid_main_page .bubble:hover{
+    background-color: orangered;
+}
