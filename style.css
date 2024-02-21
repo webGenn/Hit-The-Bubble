@@ -37,7 +37,6 @@ body{
     background-color: red;
     border-radius: 10px;
     text-align: center;
-
 }
 .starbg .icon .fa-volume-high,
 .starbg .icon .fa-volume-xmark{
@@ -96,7 +95,6 @@ body{
     background-color: red;
     border-radius: 10px;
     text-align: center;
-
 }
 .Gamebg .icon .fa-volume-high,
 .Gamebg .icon .fa-volume-xmark{
@@ -117,9 +115,16 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
+}
+.box::-webkit-scrollbar{
+    display: none;
 }
 .box .top{
+    z-index: 100;
+    position: sticky;
+    overflow-x: auto;
+    top: 0;
     width: 100%;
     height: 50px;
     background-color: #2E8B57;
