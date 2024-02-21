@@ -1,0 +1,68 @@
+@media screen and (max-width : 853px){
+    .item_box a button{
+        padding: 15px 70px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 563px){
+    .item_box a button{
+        padding: 10px 50px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width : 425px){
+    .starbg .icon h1{
+        height: 25px;
+        line-height: 25px;
+        display: inline;
+        width: 200px;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .item_box a button{
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    #Gamerover{
+        color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 25px;
+    }
+    .Gamebg .icon h1{
+        height: 30px;
+        line-height: 30px;
+        display: inline;
+        width: 200px;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width : 350px){
+    .item_box a button{
+        padding: 8px 25px;
+        font-size: 15px;
+    }
+    .box .top .board .dPanel{
+        margin-left: 10px;
+        height: 20px;
+        width: 30px;
+        background-color: white;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+}
