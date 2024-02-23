@@ -19,13 +19,13 @@ audioplay.addEventListener("click",function(){
 // ----------------------------------Game Logic----------------------------------
 
 var score = 0;
-var RandowNumberGen = Math.floor(Math.random()*40);
+var RandowNumberGen = Math.floor(Math.random()*25);
 
 function makeBubble(){
     var bubbleCreate = "";
     var page = document.querySelector(".mid_main_page");
     for(var i=0; i<=329; i++){
-    var Numgen = Math.floor(Math.random()*40);
+    var Numgen = Math.floor(Math.random()*25);
     bubbleCreate += `<div class="bubble">${Numgen}</div>`;
 }
     page.innerHTML = bubbleCreate;
@@ -33,12 +33,12 @@ function makeBubble(){
 
 function randomHit(){
     var hitbox = document.getElementById("Hit");
-        RandowNumberGen = Math.floor(Math.random()*40);
+        RandowNumberGen = Math.floor(Math.random()*25);
         hitbox.innerHTML = RandowNumberGen;
 }
 
 function runTime(){
-    let timer = 60;
+    let timer = 240;
     var timerbox = document.getElementById("Time");
     const RunningTime = setInterval(function(){
         if(timer > 0){
