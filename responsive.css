@@ -10,6 +10,12 @@
         padding: 10px 50px;
         font-size: 25px;
     }
+    .container h1{
+        font-size: 22px;
+    }
+    .container p{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width : 425px){
