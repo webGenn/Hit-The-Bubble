@@ -24,7 +24,7 @@ var RandowNumberGen = Math.floor(Math.random()*25);
 function makeBubble(){
     var bubbleCreate = "";
     var page = document.querySelector(".mid_main_page");
-    for(var i=0; i<=329; i++){
+    for(var i=0; i<=200; i++){
     var Numgen = Math.floor(Math.random()*25);
     bubbleCreate += `<div class="bubble">${Numgen}</div>`;
 }
